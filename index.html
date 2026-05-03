@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauri Agro — Premium Basmati Rice Exporters from Karnal, India</title>
+    <meta name="description" content="The pure essence of Karnal. Premium rice processing mill and global exporter delivering uncompromising Basmati quality to 40+ countries.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4BC;
+            --gold-deep: #B8860B;
+            --forest: #1A1A1A;
+            --forest-deep: #0D0D0D;
+            --espresso: #1F1F1F;
+            --cream: #FEFCF8;
+        }
+        
+        .font-display { font-family: 'Playfair Display', Georgia, serif; }
+        .font-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+        
+        .text-gradient-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .bg-gradient-gold { background: linear-gradient(135deg, var(--gold), var(--gold-deep)); }
+        .bg-gradient-forest { background: linear-gradient(135deg, var(--forest), var(--forest-deep)); }
+        .bg-gradient-cream { background: linear-gradient(180deg, #FEFEFE, #F5F5F5); }
+        .bg-gradient-hero { background: linear-gradient(180deg, rgba(13, 13, 13, 0.4) 0%, rgba(5, 5, 5, 0.9) 100%); }
+        
+        .shadow-soft { box-shadow: 0 4px 20px -6px rgba(31, 31, 31, 0.15); }
+        .shadow-elegant { box-shadow: 0 20px 50px -20px rgba(31, 31, 31, 0.35); }
+        .shadow-gold { box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.5); }
+        
+        .hover-lift:hover { transform: translateY(-8px); }
+        .transition-all { transition: all 0.3s ease; }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold-deep); }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 shadow-soft">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-16 py-4 lg:py-5">
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="relative">
+                    <img src="assets/logo.png" alt="Gauri Agro — Premium Basmati Rice Exporters" 
+                         class="h-14 w-14 lg:h-16 lg:w-16 object-contain filter drop-shadow-lg transition-transform group-hover:scale-105">
+                </div>
+                <span class="flex flex-col leading-none">
+                    <span class="font-display text-xl lg:text-2xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                        Gauri Agro
+                    </span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
+                        Premium Rice Exports
+                    </span>
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-9">
+                <a href="#home" class="text-sm font-medium text-gray-900 hover:text-yellow-600 transition-colors">Home</a>
+                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                <a href="#products" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Products</a>
+                <a href="#global" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Global Presence</a>
+                <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                Get a Quote
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative isolate overflow-hidden min-h-screen flex items-center">
+        <img src="assets/hero-rice.jpg" alt="Premium basmati rice grains" class="absolute inset-0 h-full w-full object-cover">
+        <div class="absolute inset-0 bg-gradient-hero"></div>
+        
+        <div class="relative mx-auto max-w-7xl px-6 lg:px-16 py-32 text-white">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
+                    ✨ Gauri Agro — From India's Fields to the World's Finest Tables
+                </span>
+                
+                <h1 class="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight">
+                    Premium <span class="text-gradient-gold italic">Basmati Excellence</span>
+                </h1>
+                
+                <p class="mt-6 max-w-xl text-lg md:text-xl leading-relaxed text-white/85">
+                    Experience the pure essence of Karnal's finest Basmati. From lush green paddies to state-of-the-art
+                    milling technology, Gauri Agro crafts perfection in every grain.
+                </p>
+                
+                <div class="mt-9 flex flex-wrap gap-4">
+                    <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Get a Quote →
+                    </a>
+                    <a href="#products" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
+                        Explore Products
+                    </a>
+                </div>
+
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl">
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">25+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Years of Experience</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">40+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Countries Served</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">50K+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">MT Exported / Year</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">100%</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Purity Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="border-y border-gray-200 bg-gray-50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 py-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-xs uppercase tracking-wider text-gray-600">
+            <span class="flex items-center gap-2">
+                🏆 FSSAI Certified
+            </span>
+            <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
+            <span class="flex items-center gap-2">
+                🛡️ ISO 22000
+            </span>
+            <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
+            <span class="flex items-center gap-2">
+                🌍 APEDA Registered
+            </span>
+            <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
+            <span class="flex items-center gap-2">
+                🌿 HACCP Compliant
+            </span>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    Our Products
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    Gauri Agro's Premium <span class="text-gradient-gold italic">Collection</span>
+                </h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Finest-quality Basmati and non-Basmati rice, processed with state-of-the-art technology in Karnal, Haryana.
+                </p>
+            </div>
+            
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Product 1: 1121 Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="assets/product-1121.jpg" alt="1121 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Premium Export Quality
+                        </div>
+                        <h3 class="font-display text-lg font-semibold text-gray-900 leading-tight">
+                            1121 Basmati Rice
+                        </h3>
+                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                            The jewel of Basmati varieties — 1121 offers the world's longest grain with an unmatched elongation ratio after cooking.
+                        </p>
+                        <div class="mt-4 space-y-1">
+                            <div class="text-xs font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Average Raw Grain Length: 8.35mm+
+                            </div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Cooked Elongation: 2x+
+                            </div>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-600">
+                            Request a Quote →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Product 2: 1509 Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="assets/product-traditional.jpg" alt="1509 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Most Popular
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            High Aroma · Great Value
+                        </div>
+                        <h3 class="font-display text-lg font-semibold text-gray-900 leading-tight">
+                            1509 Basmati Rice
+                        </h3>
+                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                            1509 Basmati delivers exceptional cooking characteristics — fluffy, long-grained, and wonderfully aromatic.
+                        </p>
+                        <div class="mt-4 space-y-1">
+                            <div class="text-xs font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Average Raw Grain Length: 8.20mm+
+                            </div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Cooked Elongation: 1.8x+
+                            </div>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-600">
+                            Request a Quote →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Product 3: Non-Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="assets/product-steam.jpg" alt="Non-Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Bulk Available
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Diverse Range
+                        </div>
+                        <h3 class="font-display text-lg font-semibold text-gray-900 leading-tight">
+                            Non-Basmati Rice
+                        </h3>
+                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                            Our non-Basmati range includes high-quality Sharbati, PR11, and IR64 varieties.
+                        </p>
+                        <div class="mt-4 space-y-1">
+                            <div class="text-xs font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Varieties: Sharbati, PR11, IR64
+                            </div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Lengths: Medium & Long
+                            </div>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-600">
+                            Request a Quote →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Product 4: Custom Packaging -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-square overflow-hidden relative">
+                        <img src="assets/milling.jpg" alt="Custom Packaging Solutions" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Tailored for Your Brand
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Custom Solutions
+                        </div>
+                        <h3 class="font-display text-lg font-semibold text-gray-900 leading-tight">
+                            Custom Private-Label Packaging Solutions
+                        </h3>
+                        <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                            We offer comprehensive white-label and private-label packaging solutions.
+                        </p>
+                        <div class="mt-4 space-y-1">
+                            <div class="text-xs font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Available: 5KG, 10KG, 20KG, 25KG, 50KG
+                            </div>
+                            <div class="text-xs text-gray-600 flex items-center gap-1">
+                                <span class="text-yellow-500">✓</span> Custom Branding & Design
+                            </div>
+                        </div>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-600">
+                            Request a Quote →
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                    View Full Catalogue →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative bg-gradient-cream py-24 lg:py-32 overflow-hidden">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
+            <img src="assets/paddy-fields.jpg" alt="Basmati paddy fields at golden hour" 
+                 class="rounded-2xl shadow-elegant aspect-[5/4] object-cover">
+            
+            <div>
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    About Gauri Agro
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    Purveyors of Excellence from <span class="text-gradient-gold italic">Karnal</span>
+                </h2>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    A premium rice processing mill and global exporter based in Karnal, Haryana - the heart of India's basmati belt. 
+                    Delivering uncompromising quality to discerning buyers across 40+ countries.
+                </p>
+                
+                <div class="mt-10 grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                            🌿
+                        </span>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Farm to Fork</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Pesticide-free procurement and multi-stage sorting for an immaculate grain.</p>
+                    </div>
+                    
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                            🏭
+                        </span>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Liquid Gold. Crystal Clarity.</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Our Sortex machines deliver 100% purity, unbroken length, and pristine whiteness.</p>
+                    </div>
+                    
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                            🚚
+                        </span>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Global Supply</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Seamless logistics handling exports to 40+ countries effortlessly.</p>
+                    </div>
+                    
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
+                            🛡️
+                        </span>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Certified</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Full APEDA & FSSAI compliance for audit-ready documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Message -->
+    <section class="py-20 lg:py-28 bg-gradient-forest text-white">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-200">
+                    <span class="h-px w-8 bg-yellow-200"></span>
+                    Founder's Message
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-white">
+                    A Vision Built on <span class="text-gradient-gold italic">Trust</span>
+                </h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-5 gap-12 items-center">
+                <!-- Founder Image Section -->
+                <div class="lg:col-span-2">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl bg-gradient-gold p-1 shadow-gold">
+                            <div class="w-full h-full rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center overflow-hidden">
+                                <div class="text-center p-8">
+                                    <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                                        <span class="text-3xl font-bold text-gray-900">GG</span>
+                                    </div>
+                                    <div class="text-yellow-200 font-display text-xl font-semibold mb-2">
+                                        Mr. Gagan Deep Gupta
+                                    </div>
+                                    <div class="text-white/70 text-sm">
+                                        Founder & CEO
+                                    </div>
+                                    <div class="mt-4 text-xs text-white/50">
+                                        Add founder's photo here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Message Content -->
+                <div class="lg:col-span-3">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4">
+                            <span class="text-6xl text-yellow-500/30">"</span>
+                        </div>
+                        
+                        <div class="relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 lg:p-8">
+                            <blockquote class="text-base lg:text-lg leading-relaxed text-white/90 font-light">
+                                "Our primary goal behind creating <strong class="text-yellow-200 font-semibold">GAURI AGRO</strong> is to cater to clients with reliable quality and cost-effective solutions... Using our intellectual and managerial prowess, we proudly claim of creating and responding to the needs of contemporary society, providing the best quality rice for people of each strata of the society."
+                            </blockquote>
+                            
+                            <div class="mt-6 pt-6 border-t border-white/20">
+                                <div class="font-display text-lg lg:text-xl font-semibold text-yellow-200">
+                                    Mr. Gagan Deep Gupta
+                                </div>
+                                <div class="text-sm text-white/70 mt-1">
+                                    Founder & CEO, Gauri Agro
+                                </div>
+                                <div class="mt-4 w-20 h-px bg-gradient-to-r from-yellow-200 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Leadership Team -->
+    <section class="py-20 lg:py-28 bg-gradient-cream">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    Leadership
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    Our Leadership <span class="text-gradient-gold italic">Team</span>
+                </h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Experienced professionals driving Gauri Agro's global expansion and quality commitment.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Leadership Member 1 -->
+                <div class="group">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl bg-gradient-gold p-1 shadow-gold group-hover:shadow-elegant transition-all">
+                            <div class="w-full h-full rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center overflow-hidden">
+                                <div class="text-center p-8">
+                                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                                        <span class="text-2xl font-bold text-gray-900">L1</span>
+                                    </div>
+                                    <div class="text-yellow-600 font-display text-lg font-semibold mb-2">
+                                        Leadership Member 1
+                                    </div>
+                                    <div class="text-gray-600 text-sm">
+                                        Position Title
+                                    </div>
+                                    <div class="mt-3 text-xs text-gray-400">
+                                        Add team member photo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
+                            Leadership Member 1
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Position Title
+                        </p>
+                        <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+                            Brief description of their role and expertise in driving Gauri Agro's success.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Leadership Member 2 -->
+                <div class="group">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl bg-gradient-gold p-1 shadow-gold group-hover:shadow-elegant transition-all">
+                            <div class="w-full h-full rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center overflow-hidden">
+                                <div class="text-center p-8">
+                                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                                        <span class="text-2xl font-bold text-gray-900">L2</span>
+                                    </div>
+                                    <div class="text-yellow-600 font-display text-lg font-semibold mb-2">
+                                        Leadership Member 2
+                                    </div>
+                                    <div class="text-gray-600 text-sm">
+                                        Position Title
+                                    </div>
+                                    <div class="mt-3 text-xs text-gray-400">
+                                        Add team member photo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
+                            Leadership Member 2
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Position Title
+                        </p>
+                        <p class="text-sm text-gray-600 mt-3 leading-relaxed">
+                            Brief description of their role and expertise in driving Gauri Agro's success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Values -->
+    <section class="py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    Our Core Values
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    What We <span class="text-gradient-gold italic">Stand For</span>
+                </h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Four principles that guide every decision — from farm to your shores.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Value 1: Farm-to-Ship Quality -->
+                <div class="group relative">
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
+                                🌾
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                                Farm-to-Ship Quality
+                            </h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Direct farmer relationships ensuring pesticide-free procurement and grade-certified batches.
+                            </p>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-yellow-500/30 group-hover:bg-yellow-500 group-hover:scale-150 transition-all"></div>
+                    </div>
+                    
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-sm font-bold text-gray-900 shadow-gold">
+                        01
+                    </div>
+                </div>
+
+                <!-- Value 2: Global Standards -->
+                <div class="group relative">
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
+                                🌍
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                                Global Standards
+                            </h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                APEDA registered, FSSAI compliant, and adhering to destination-country import norms.
+                            </p>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-yellow-500/30 group-hover:bg-yellow-500 group-hover:scale-150 transition-all"></div>
+                    </div>
+                    
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-sm font-bold text-gray-900 shadow-gold">
+                        02
+                    </div>
+                </div>
+
+                <!-- Value 3: Transparent Business -->
+                <div class="group relative">
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
+                                🤝
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                                Transparent Business
+                            </h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Clear pricing, audit-ready documentation, and honest communication at every step.
+                            </p>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-yellow-500/30 group-hover:bg-yellow-500 group-hover:scale-150 transition-all"></div>
+                    </div>
+                    
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-sm font-bold text-gray-900 shadow-gold">
+                        03
+                    </div>
+                </div>
+
+                <!-- Value 4: Custom Solutions -->
+                <div class="group relative">
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
+                                📦
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                                Custom Solutions
+                            </h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Flexible MOQs, private-label packaging, and tailor-made logistics for every client.
+                            </p>
+                        </div>
+                        
+                        <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-yellow-500/30 group-hover:bg-yellow-500 group-hover:scale-150 transition-all"></div>
+                    </div>
+                    
+                    <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-sm font-bold text-gray-900 shadow-gold">
+                        04
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 lg:py-32 bg-gradient-cream">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    From Field to Port
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    A meticulous journey of <span class="text-gradient-gold italic">excellence</span>
+                </h2>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-5 relative">
+                <!-- Connecting line -->
+                <div class="absolute top-8 left-8 right-8 h-px bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500 hidden md:block"></div>
+                
+                <!-- Step 1: Sourcing -->
+                <div class="relative text-center hover-lift transition-all">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold font-display text-lg font-bold text-gray-900 relative z-10">
+                        01
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Sourcing</h3>
+                    <p class="mt-1.5 text-sm text-gray-600">Karnal & Punjab paddy belts</p>
+                </div>
+                
+                <!-- Step 2: Aging -->
+                <div class="relative text-center hover-lift transition-all">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold font-display text-lg font-bold text-gray-900 relative z-10">
+                        02
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Aging</h3>
+                    <p class="mt-1.5 text-sm text-gray-600">12–24 month controlled aging</p>
+                </div>
+                
+                <!-- Step 3: Milling -->
+                <div class="relative text-center hover-lift transition-all">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold font-display text-lg font-bold text-gray-900 relative z-10">
+                        03
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Milling</h3>
+                    <p class="mt-1.5 text-sm text-gray-600">Stainless steel modern mills</p>
+                </div>
+                
+                <!-- Step 4: Sorting -->
+                <div class="relative text-center hover-lift transition-all">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold font-display text-lg font-bold text-gray-900 relative z-10">
+                        04
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Sorting</h3>
+                    <p class="mt-1.5 text-sm text-gray-600">Color & length grading</p>
+                </div>
+                
+                <!-- Step 5: Export -->
+                <div class="relative text-center hover-lift transition-all">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold font-display text-lg font-bold text-gray-900 relative z-10">
+                        05
+                    </div>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Export</h3>
+                    <p class="mt-1.5 text-sm text-gray-600">Containerized to 30+ countries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Global Presence -->
+    <section id="global" class="relative overflow-hidden bg-gradient-forest text-white py-24 lg:py-32">
+        <div class="relative mx-auto max-w-7xl px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-200">
+                    <span class="h-px w-8 bg-yellow-200"></span>
+                    Global Presence
+                </span>
+                <h2 class="mt-4 font-display text-4xl md:text-5xl font-semibold leading-tight">
+                    Trusted in <span class="text-gradient-gold italic">40+ countries</span>
+                </h2>
+                <p class="mt-5 text-white/75 max-w-lg leading-relaxed">
+                    Our basmati travels across oceans to reach kitchens, restaurants and retail shelves —
+                    delivering the pure essence of Karnal to discerning buyers worldwide.
+                </p>
+                <a href="#contact" class="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                    View export network →
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">United Arab Emirates</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Saudi Arabia</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Iran</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Iraq</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Kuwait</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Qatar</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">United Kingdom</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Germany</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">France</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Netherlands</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">USA</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Canada</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Australia</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Singapore</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">Malaysia</div>
+                <div class="rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm text-white/85 hover:bg-white/10 transition-all">South Africa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 lg:py-32 bg-gray-50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    Words from our partners
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    Trusted by importers <span class="text-gradient-gold italic">worldwide</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <span class="text-6xl text-yellow-500/40">"</span>
+                    <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
+                        "Gauri Agro has been our trusted basmati partner for years. The quality consistency from Karnal's finest mills is unmatched."
+                    </blockquote>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
+                        <div class="font-display font-semibold text-gray-900">Ahmed Al-Rashid</div>
+                        <div class="text-xs text-gray-600 mt-0.5">Importer, Dubai, UAE</div>
+                    </figcaption>
+                </figure>
+
+                <!-- Testimonial 2 -->
+                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <span class="text-6xl text-yellow-500/40">"</span>
+                    <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
+                        "The 1121 and 1509 varieties we receive are exceptional. Their Sortex processing delivers the purity our customers expect."
+                    </blockquote>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
+                        <div class="font-display font-semibold text-gray-900">Sarah Müller</div>
+                        <div class="text-xs text-gray-600 mt-0.5">Distributor, Hamburg, Germany</div>
+                    </figcaption>
+                </figure>
+
+                <!-- Testimonial 3 -->
+                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <span class="text-6xl text-yellow-500/40">"</span>
+                    <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
+                        "Professional export documentation, reliable supply chain, and rice that speaks for itself. A truly dependable supplier."
+                    </blockquote>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
+                        <div class="font-display font-semibold text-gray-900">James O'Connor</div>
+                        <div class="text-xs text-gray-600 mt-0.5">Wholesaler, London, UK</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-24">
+        <div class="mx-auto max-w-6xl px-6 lg:px-16">
+            <div class="relative overflow-hidden rounded-3xl bg-gradient-forest p-12 lg:p-16 text-center shadow-elegant">
+                <div class="relative">
+                    <h2 class="font-display text-3xl md:text-5xl font-semibold text-white leading-tight">
+                        Ready to source <span class="text-gradient-gold italic">premium basmati</span> from Gauri Agro?
+                    </h2>
+                    <p class="mt-5 text-white/75 max-w-xl mx-auto">
+                        Experience the pure essence of Karnal with Gauri Agro. Get a tailored quote within 24 hours.
+                    </p>
+                    
+                    <!-- Contact Information -->
+                    <div class="mt-12 grid md:grid-cols-3 gap-8 text-left">
+                        <div class="flex items-start gap-4">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
+                                📞
+                            </span>
+                            <div>
+                                <div class="text-white/60 text-xs uppercase tracking-widest">Phone</div>
+                                <a href="tel:+918295249047" class="block mt-1 text-white hover:text-yellow-200 transition">+91 82952 49047</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
+                                ✉️
+                            </span>
+                            <div>
+                                <div class="text-white/60 text-xs uppercase tracking-widest">Email</div>
+                                <a href="mailto:ceo@gauriagro.in" class="block mt-1 text-white hover:text-yellow-200 transition">ceo@gauriagro.in</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
+                                📍
+                            </span>
+                            <div>
+                                <div class="text-white/60 text-xs uppercase tracking-widest">Headquarters</div>
+                                <p class="mt-1 text-white">Gauri Agro Rice Mill,<br>Behind Madhuban,<br>Karnal, Haryana<br>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="tel:+918295249047" class="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Request a Quote →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-forest text-white">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+            <div class="grid gap-12 lg:grid-cols-4">
+                <div class="lg:col-span-2">
+                    <a href="#home" class="flex items-center gap-2.5">
+                        <img src="assets/logo.png" alt="Gauri Agro" class="h-14 w-14 rounded-full object-contain bg-white/95">
+                        <span class="font-display text-2xl font-bold">Gauri Agro</span>
+                    </a>
+                    <p class="mt-5 max-w-md text-sm leading-relaxed text-white/75">
+                        Premium basmati rice exporters from Karnal, the rice bowl of India.
+                        Trusted by importers, wholesalers and distributors across 30+ countries.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">FSSAI</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">ISO 22000</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">APEDA</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">HACCP</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-display text-base font-semibold text-yellow-200">Explore</h4>
+                    <ul class="mt-4 space-y-2.5 text-sm text-white/75">
+                        <li><a href="#about" class="hover:text-yellow-200 transition">About Us</a></li>
+                        <li><a href="#products" class="hover:text-yellow-200 transition">Our Products</a></li>
+                        <li><a href="#global" class="hover:text-yellow-200 transition">Global Presence</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-200 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-display text-base font-semibold text-yellow-200">Get in Touch</h4>
+                    <ul class="mt-4 space-y-3 text-sm text-white/80">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 text-yellow-200">📍</span>
+                            <span>Industrial Area, Karnal,<br>Haryana 132001, India</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-200">📞</span>
+                            <a href="tel:+919876543210" class="hover:text-yellow-200 transition">+91 98765 43210</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-200">✉️</span>
+                            <a href="mailto:exports@gauriagro.com" class="hover:text-yellow-200 transition">exports@gauriagro.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-14 border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/60">
+                <p>© 2024 Gauri Agro Exports. All rights reserved.</p>
+                <p>Crafted with care from Karnal, India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
