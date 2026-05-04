@@ -97,6 +97,67 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 80%;
+            max-width: 320px;
+            background: white;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active .mobile-menu-content {
+            transform: translateX(0);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
     </style>
 </head>
 <body class="font-body bg-white text-gray-900">
@@ -107,18 +168,19 @@
             <a href="#home" class="flex items-center gap-3 group">
                 <div class="relative">
                     <img src="assets/logo.png" alt="Gauri Agro — Premium Basmati Rice Exporters" 
-                         class="h-16 w-16 lg:h-20 lg:w-20 object-contain transition-transform group-hover:scale-105">
+                         class="h-12 w-12 lg:h-20 lg:w-20 object-contain transition-transform group-hover:scale-105">
                 </div>
                 <span class="flex flex-col leading-none">
-                    <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                    <span class="font-display text-xl lg:text-3xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
                         GAURI AGRO
                     </span>
-                    <span class="text-sm tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
+                    <span class="text-xs lg:text-sm tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
                         Premium Rice Millers And Exporter
                     </span>
                 </span>
             </a>
 
+            <!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center gap-9">
                 <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-yellow-600 transition-colors">Home</a>
                 <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
@@ -127,11 +189,56 @@
                 <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
             </nav>
 
-            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
-                Get a Quote
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                    Get a Quote
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center justify-between">
+                    <span class="font-display text-xl font-bold text-gray-900">Menu</span>
+                    <button id="mobile-menu-close" class="p-2" aria-label="Close menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav class="p-6 space-y-4">
+                <a href="index.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 transition-colors border-b border-gray-100">
+                    Home
+                </a>
+                <a href="about.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 transition-colors border-b border-gray-100">
+                    About
+                </a>
+                <a href="products.html" class="block py-3 text-base font-medium text-gray-900 hover:text-yellow-600 transition-colors border-b border-gray-100">
+                    Products
+                </a>
+                <a href="global-presence.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 transition-colors border-b border-gray-100">
+                    Global Presence
+                </a>
+                <a href="contact.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 transition-colors border-b border-gray-100">
+                    Contact
+                </a>
+                <a href="contact.html" class="block mt-6 text-center rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold">
+                    Get a Quote
+                </a>
+            </nav>
+        </div>
+    </div>
 
     <!-- Hero Banner -->
     <section class="relative isolate overflow-hidden min-h-[70vh] flex items-center">
@@ -1489,3 +1596,44 @@
 </body>
 </html>
 
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const hamburger = document.querySelector('.hamburger');
+
+            function openMenu() {
+                mobileMenu.classList.add('active');
+                hamburger.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            mobileMenuBtn.addEventListener('click', openMenu);
+            mobileMenuClose.addEventListener('click', closeMenu);
+
+            // Close menu when clicking outside
+            mobileMenu.addEventListener('click', function (e) {
+                if (e.target === mobileMenu) {
+                    closeMenu();
+                }
+            });
+
+            // Close menu when clicking on a link
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+</body>
+
+</html>
