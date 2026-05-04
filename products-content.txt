@@ -1,0 +1,35 @@
+PRODUCTS PAGE STRUCTURE:
+
+=== BASMATI RICE SECTION ===
+1. 1121 Basmati Rice - Best Seller
+2. 1509 Basmati Rice - Most Popular  
+3. 1718 Basmati Rice - Premium Quality
+4. 1401 Basmati Rice - Premium
+5. Pusa Basmati Rice - Traditional
+6. Traditional Basmati Rice - Authentic
+7. Sughandha Basmati Rice - Aromatic
+8. Sharbati Basmati Rice - Popular
+
+=== NON-BASMATI RICE SECTION ===
+1. PR-11 Long Grain Non-Basmati Rice
+2. PR-106 (Parmal) Long Grain Non-Basmati Rice
+3. IR-64 Long Grain Non-Basmati Rice
+4. IR-8 Medium Grain Non-Basmati Rice
+5. Swarna Short Grain Non-Basmati Rice
+
+=== SPECIAL VARIETIES SECTION ===
+1. Sona Masoori
+2. Idli Rice
+3. Ponni Rice
+4. Matta Rice
+5. Ambemohar Rice
+
+=== ORGANIC BASMATI SECTION ===
+1. 1121 Organic Basmati Rice
+2. Pusa Organic Basmati Rice
+3. CSR-30 Organic Basmati Rice
+4. Ranvir Organic Basmati Rice
+5. Traditional Type-3 Organic Basmati Rice
+
+=== CUSTOM PACKAGING SECTION ===
+Custom Private-Label Packaging Solutions (at the bottom)
