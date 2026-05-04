@@ -65,37 +65,69 @@
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--gold-deep); }
+        
+        /* Hero Slider Styles - Simple Slide */
+        .hero-slider-container {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+        
+        .hero-slider {
+            position: absolute;
+            inset: 0;
+        }
+        
+        .slider-track {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+        
+        .slide {
+            position: relative;
+            width: 100vw;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="font-body bg-white text-gray-900">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 w-full bg-white/85 backdrop-blur-md border-b border-gray-200 shadow-soft">
+    <header class="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-soft">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-16 py-4 lg:py-5">
             <a href="#home" class="flex items-center gap-3 group">
                 <div class="relative">
                     <img src="assets/logo.png" alt="Gauri Agro — Premium Basmati Rice Exporters" 
-                         class="h-14 w-14 lg:h-16 lg:w-16 object-contain filter drop-shadow-lg transition-transform group-hover:scale-105">
+                         class="h-16 w-16 lg:h-20 lg:w-20 object-contain transition-transform group-hover:scale-105">
                 </div>
                 <span class="flex flex-col leading-none">
-                    <span class="font-display text-xl lg:text-2xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
-                        Gauri Agro
+                    <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                        GAURI AGRO
                     </span>
-                    <span class="text-xs uppercase tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
-                        Premium Rice Exports
+                    <span class="text-sm tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
+                        Premium Rice Millers And Exporter
                     </span>
                 </span>
             </a>
 
             <nav class="hidden lg:flex items-center gap-9">
-                <a href="#home" class="text-sm font-medium text-gray-900 hover:text-yellow-600 transition-colors">Home</a>
-                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
-                <a href="#products" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Products</a>
-                <a href="#global" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Global Presence</a>
-                <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                <a href="index.html" class="text-sm font-medium text-gray-900 hover:text-yellow-600 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                <a href="products.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Products</a>
+                <a href="global-presence.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Global Presence</a>
+                <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
             </nav>
 
-            <a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
                 Get a Quote
             </a>
         </div>
@@ -103,49 +135,65 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative isolate overflow-hidden min-h-screen flex items-center">
-        <img src="assets/hero-rice.jpg" alt="Premium basmati rice grains" class="absolute inset-0 h-full w-full object-cover">
+        <!-- Image Slider -->
+        <div class="hero-slider-container absolute inset-0">
+            <div class="hero-slider">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="assets/Hero-rice.png" alt="Premium basmati rice grains" class="absolute inset-0 h-full w-full object-cover">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/RICEPLANT.png" alt="Rice Processing Machinery" class="absolute inset-0 h-full w-full object-cover">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/RICEPLANT2.png" alt="Rice Processing Plant" class="absolute inset-0 h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="absolute inset-0 bg-gradient-hero"></div>
         
-        <div class="relative mx-auto max-w-7xl px-6 lg:px-16 py-32 text-white">
-            <div class="max-w-3xl">
-                <span class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
-                    ✨ Gauri Agro — From India's Fields to the World's Finest Tables
+        
+        <div class="relative w-full px-8 lg:px-12 py-32 text-white">
+            <div class="max-w-4xl">
+                <!-- Dynamic Badge -->
+                <span id="hero-badge" class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
+                    <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span> <span class="badge-text">From the Rice Bowl of India to Tables Worldwide</span>
                 </span>
                 
+                <!-- Dynamic Heading -->
                 <h1 class="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight">
-                    Premium <span class="text-gradient-gold italic">Basmati Excellence</span>
+                    <span id="hero-title" class="text-gradient-gold italic">GAURI AGRO</span>
                 </h1>
                 
-                <p class="mt-6 max-w-xl text-lg md:text-xl leading-relaxed text-white/85">
-                    Experience the pure essence of Karnal's finest Basmati. From lush green paddies to state-of-the-art
-                    milling technology, Gauri Agro crafts perfection in every grain.
+                <!-- Dynamic Description -->
+                <p id="hero-description" class="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/85">
+                    Premium Rice Miller • Processor • Exporter • Trader<br>
+                    Karnal, Haryana, India — The Heart of Basmati Country
                 </p>
                 
                 <div class="mt-9 flex flex-wrap gap-4">
-                    <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
                         Get a Quote →
                     </a>
-                    <a href="#products" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
+                    <a href="products.html" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
                         Explore Products
                     </a>
                 </div>
 
-                <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl">
+                <!-- Dynamic Statistics -->
+                <div id="hero-stats" class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-2xl">
                     <div>
-                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">25+</div>
-                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Years of Experience</div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200 stat-value">25+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65 stat-label">Years of Excellence</div>
                     </div>
                     <div>
-                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">40+</div>
-                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Countries Served</div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200 stat-value">200 MT</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65 stat-label">Daily Processing Capacity</div>
                     </div>
                     <div>
-                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">50K+</div>
-                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">MT Exported / Year</div>
-                    </div>
-                    <div>
-                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">100%</div>
-                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Purity Guarantee</div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200 stat-value">Global</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65 stat-label">Export Reach</div>
                     </div>
                 </div>
             </div>
@@ -156,19 +204,27 @@
     <section class="border-y border-gray-200 bg-gray-50">
         <div class="mx-auto max-w-7xl px-6 lg:px-16 py-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-xs uppercase tracking-wider text-gray-600">
             <span class="flex items-center gap-2">
-                🏆 FSSAI Certified
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> APEDA Registered
             </span>
             <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
             <span class="flex items-center gap-2">
-                🛡️ ISO 22000
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> US-FDA Approved
             </span>
             <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
             <span class="flex items-center gap-2">
-                🌍 APEDA Registered
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> FSSAI Certified
             </span>
             <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
             <span class="flex items-center gap-2">
-                🌿 HACCP Compliant
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> FICCI Member
+            </span>
+            <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
+            <span class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> MSME Registered
+            </span>
+            <span class="hidden sm:block h-3 w-px bg-gray-300"></span>
+            <span class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-yellow-600"></span> FIEO Member
             </span>
         </div>
     </section>
@@ -258,7 +314,7 @@
                 <!-- Product 3: Non-Basmati -->
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-square overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="Non-Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/product-sella.jpg" alt="Non-Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Bulk Available
                         </div>
@@ -291,7 +347,7 @@
                 <!-- Product 4: Custom Packaging -->
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-square overflow-hidden relative">
-                        <img src="assets/milling.jpg" alt="Custom Packaging Solutions" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/CUSTOM PACKAGING.png" alt="Custom Packaging Solutions" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Tailored for Your Brand
                         </div>
@@ -323,7 +379,7 @@
             </div>
             
             <div class="mt-12 text-center">
-                <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                <a href="products.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
                     View Full Catalogue →
                 </a>
             </div>
@@ -332,54 +388,70 @@
 
     <!-- About Section -->
     <section id="about" class="relative bg-gradient-cream py-24 lg:py-32 overflow-hidden">
-        <div class="mx-auto max-w-7xl px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
-            <img src="assets/paddy-fields.jpg" alt="Basmati paddy fields at golden hour" 
+        <!-- Subtle background rice field -->
+        <div class="absolute inset-0 opacity-5">
+            <img src="assets/PADDY-FIELDS.JPG.png" alt="Rice paddy fields background" class="w-full h-full object-cover">
+        </div>
+        
+        
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <img src="assets/PADDY-FIELDS.JPG.png" alt="Basmati paddy fields at golden hour" 
                  class="rounded-2xl shadow-elegant aspect-[5/4] object-cover">
             
             <div>
                 <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
                     <span class="h-px w-8 bg-yellow-600"></span>
-                    About Gauri Agro
+                    Company Profile
                 </span>
                 <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
-                    Purveyors of Excellence from <span class="text-gradient-gold italic">Karnal</span>
+                    25 Years of Excellence from <span class="text-gradient-gold italic">Karnal</span>
                 </h2>
                 <p class="mt-4 text-gray-600 leading-relaxed">
-                    A premium rice processing mill and global exporter based in Karnal, Haryana - the heart of India's basmati belt. 
-                    Delivering uncompromising quality to discerning buyers across 40+ countries.
+                    Established 25 years ago in the heart of Karnal, Haryana — India's renowned "Rice Bowl" — Gauri Agro has grown from a modest family venture into one of the region's most trusted rice milling enterprises. Founded by visionary entrepreneurs Mr. Gagan Gupta and Mr. Mirdul Gupta, our company represents three decades of agricultural heritage and a quarter-century of milling excellence.
+                </p>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    With our state-of-the-art processing facility capable of handling 200 MT daily, we take pride in transforming the finest paddy into premium-quality rice that reaches millions of households worldwide. Our commitment to quality, transparency, and customer satisfaction has made us a preferred partner for importers, wholesalers, retailers, and HORECA customers across global markets.
                 </p>
                 
                 <div class="mt-10 grid sm:grid-cols-2 gap-6">
                     <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
                         <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                            🌿
+                            <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                            </svg>
                         </span>
-                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Farm to Fork</h3>
-                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Pesticide-free procurement and multi-stage sorting for an immaculate grain.</p>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">200 MT Daily Capacity</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Our state-of-the-art milling facility at Village Amritpur Kalan, Tehsil Gharaunda, processes 200 Metric Tonnes of paddy into premium rice every single day.</p>
                     </div>
                     
                     <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
                         <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                            🏭
+                            <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 10.1 15.9 11 17 11V20C17 21.1 16.1 22 15 22H9C7.9 22 7 21.1 7 20V11C8.1 11 9 10.1 9 9V7H3V9H5V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V9H21Z"/>
+                            </svg>
                         </span>
-                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Liquid Gold. Crystal Clarity.</h3>
-                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Our Sortex machines deliver 100% purity, unbroken length, and pristine whiteness.</p>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Advanced Technology</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Combining traditional expertise with modern technology for highest standards of purity and taste.</p>
                     </div>
                     
                     <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
                         <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                            🚚
+                            <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
                         </span>
-                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Global Supply</h3>
-                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Seamless logistics handling exports to 40+ countries effortlessly.</p>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Global Supply Chain</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Reliable supply chain trusted by Importers, Wholesalers, Retailers, and HORECA customers worldwide.</p>
                     </div>
                     
                     <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
                         <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-gold">
-                            🛡️
+                            <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C14.8,12.6 13.9,13.5 12.8,13.5H11.2C10.1,13.5 9.2,12.6 9.2,11.5V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.4,8.7 10.4,10V11.5C10.4,11.8 10.7,12.3 11.2,12.3H12.8C13.3,12.3 13.6,11.8 13.6,11.5V10C13.6,8.7 12.8,8.2 12,8.2Z"/>
+                            </svg>
                         </span>
-                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Certified</h3>
-                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">Full APEDA & FSSAI compliance for audit-ready documentation.</p>
+                        <h3 class="mt-4 font-display text-lg font-semibold text-gray-900">Certified Quality</h3>
+                        <p class="mt-1.5 text-sm text-gray-600 leading-relaxed">APEDA, US-FDA, FSSAI, FICCI, MSME, and FIEO memberships ensure international standards.</p>
                     </div>
                 </div>
             </div>
@@ -433,7 +505,7 @@
                         
                         <div class="relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 lg:p-8">
                             <blockquote class="text-base lg:text-lg leading-relaxed text-white/90 font-light">
-                                "Our primary goal behind creating <strong class="text-yellow-200 font-semibold">GAURI AGRO</strong> is to cater to clients with reliable quality and cost-effective solutions... Using our intellectual and managerial prowess, we proudly claim of creating and responding to the needs of contemporary society, providing the best quality rice for people of each strata of the society."
+                                "                                "Our primary goal behind creating <strong class="text-yellow-200 font-semibold">GAURI AGRO</strong> is to cater to clients with reliable quality and cost-effective solutions. Using our intellectual and managerial prowess, we proudly claim of creating and responding to the needs of contemporary society, providing the best quality rice for people of each strata of the society.""
                             </blockquote>
                             
                             <div class="mt-6 pt-6 border-t border-white/20">
@@ -446,97 +518,6 @@
                                 <div class="mt-4 w-20 h-px bg-gradient-to-r from-yellow-200 to-transparent"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Leadership Team -->
-    <section class="py-20 lg:py-28 bg-gradient-cream">
-        <div class="mx-auto max-w-7xl px-6 lg:px-16">
-            <div class="text-center mb-16">
-                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
-                    <span class="h-px w-8 bg-yellow-600"></span>
-                    Leadership
-                </span>
-                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
-                    Our Leadership <span class="text-gradient-gold italic">Team</span>
-                </h2>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-                    Experienced professionals driving Gauri Agro's global expansion and quality commitment.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                <!-- Leadership Member 1 -->
-                <div class="group">
-                    <div class="relative">
-                        <div class="aspect-[4/5] rounded-2xl bg-gradient-gold p-1 shadow-gold group-hover:shadow-elegant transition-all">
-                            <div class="w-full h-full rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center overflow-hidden">
-                                <div class="text-center p-8">
-                                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
-                                        <span class="text-2xl font-bold text-gray-900">L1</span>
-                                    </div>
-                                    <div class="text-yellow-600 font-display text-lg font-semibold mb-2">
-                                        Leadership Member 1
-                                    </div>
-                                    <div class="text-gray-600 text-sm">
-                                        Position Title
-                                    </div>
-                                    <div class="mt-3 text-xs text-gray-400">
-                                        Add team member photo
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 text-center">
-                        <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
-                            Leadership Member 1
-                        </h3>
-                        <p class="text-sm text-gray-600 mt-1">
-                            Position Title
-                        </p>
-                        <p class="text-sm text-gray-600 mt-3 leading-relaxed">
-                            Brief description of their role and expertise in driving Gauri Agro's success.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Leadership Member 2 -->
-                <div class="group">
-                    <div class="relative">
-                        <div class="aspect-[4/5] rounded-2xl bg-gradient-gold p-1 shadow-gold group-hover:shadow-elegant transition-all">
-                            <div class="w-full h-full rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center overflow-hidden">
-                                <div class="text-center p-8">
-                                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
-                                        <span class="text-2xl font-bold text-gray-900">L2</span>
-                                    </div>
-                                    <div class="text-yellow-600 font-display text-lg font-semibold mb-2">
-                                        Leadership Member 2
-                                    </div>
-                                    <div class="text-gray-600 text-sm">
-                                        Position Title
-                                    </div>
-                                    <div class="mt-3 text-xs text-gray-400">
-                                        Add team member photo
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 text-center">
-                        <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
-                            Leadership Member 2
-                        </h3>
-                        <p class="text-sm text-gray-600 mt-1">
-                            Position Title
-                        </p>
-                        <p class="text-sm text-gray-600 mt-3 leading-relaxed">
-                            Brief description of their role and expertise in driving Gauri Agro's success.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -559,21 +540,23 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Value 1: Farm-to-Ship Quality -->
                 <div class="group relative">
-                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                        <div class="flex items-center justify-center mb-6">
-                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
-                                🌾
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift h-full flex flex-col">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                                </svg>
                             </div>
                         </div>
                         
-                        <div class="text-center">
-                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                        <div class="text-center flex-1 flex flex-col">
+                            <h3 class="font-display text-lg font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
                                 Farm-to-Ship Quality
                             </h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">
+                            <p class="text-sm text-gray-600 leading-relaxed flex-1">
                                 Direct farmer relationships ensuring pesticide-free procurement and grade-certified batches.
                             </p>
                         </div>
@@ -588,18 +571,20 @@
 
                 <!-- Value 2: Global Standards -->
                 <div class="group relative">
-                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                        <div class="flex items-center justify-center mb-6">
-                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
-                                🌍
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift h-full flex flex-col">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                                </svg>
                             </div>
                         </div>
                         
-                        <div class="text-center">
-                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                        <div class="text-center flex-1 flex flex-col">
+                            <h3 class="font-display text-lg font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
                                 Global Standards
                             </h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">
+                            <p class="text-sm text-gray-600 leading-relaxed flex-1">
                                 APEDA registered, FSSAI compliant, and adhering to destination-country import norms.
                             </p>
                         </div>
@@ -614,18 +599,20 @@
 
                 <!-- Value 3: Transparent Business -->
                 <div class="group relative">
-                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                        <div class="flex items-center justify-center mb-6">
-                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
-                                🤝
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift h-full flex flex-col">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                </svg>
                             </div>
                         </div>
                         
-                        <div class="text-center">
-                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                        <div class="text-center flex-1 flex flex-col">
+                            <h3 class="font-display text-lg font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
                                 Transparent Business
                             </h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">
+                            <p class="text-sm text-gray-600 leading-relaxed flex-1">
                                 Clear pricing, audit-ready documentation, and honest communication at every step.
                             </p>
                         </div>
@@ -640,18 +627,20 @@
 
                 <!-- Value 4: Custom Solutions -->
                 <div class="group relative">
-                    <div class="rounded-2xl border border-gray-200 bg-white p-6 lg:p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                        <div class="flex items-center justify-center mb-6">
-                            <div class="text-4xl lg:text-5xl mb-2 group-hover:scale-110 transition-transform">
-                                📦
+                    <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift h-full flex flex-col">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                </svg>
                             </div>
                         </div>
                         
-                        <div class="text-center">
-                            <h3 class="font-display text-lg lg:text-xl font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                        <div class="text-center flex-1 flex flex-col">
+                            <h3 class="font-display text-lg font-semibold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
                                 Custom Solutions
                             </h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">
+                            <p class="text-sm text-gray-600 leading-relaxed flex-1">
                                 Flexible MOQs, private-label packaging, and tailor-made logistics for every client.
                             </p>
                         </div>
@@ -841,7 +830,9 @@
                     <div class="mt-12 grid md:grid-cols-3 gap-8 text-left">
                         <div class="flex items-start gap-4">
                             <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
-                                📞
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                </svg>
                             </span>
                             <div>
                                 <div class="text-white/60 text-xs uppercase tracking-widest">Phone</div>
@@ -851,21 +842,26 @@
                         
                         <div class="flex items-start gap-4">
                             <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
-                                ✉️
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                                </svg>
                             </span>
                             <div>
                                 <div class="text-white/60 text-xs uppercase tracking-widest">Email</div>
-                                <a href="mailto:ceo@gauriagro.in" class="block mt-1 text-white hover:text-yellow-200 transition">ceo@gauriagro.in</a>
+                                <a href="mailto:info@gauriagro.com" class="block mt-1 text-white hover:text-yellow-200 transition">info@gauriagro.com</a>
+                                <a href="mailto:sales@gauriagro.in" class="block mt-1 text-white hover:text-yellow-200 transition">sales@gauriagro.in</a>
                             </div>
                         </div>
                         
                         <div class="flex items-start gap-4">
                             <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-gold text-gray-900 flex-shrink-0">
-                                📍
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                                </svg>
                             </span>
                             <div>
                                 <div class="text-white/60 text-xs uppercase tracking-widest">Headquarters</div>
-                                <p class="mt-1 text-white">Gauri Agro Rice Mill,<br>Behind Madhuban,<br>Karnal, Haryana<br>India</p>
+                                <p class="mt-1 text-white">No. 293, Backside Madhuban Academy,<br>Sirsi Road, Daha, Karnal-132001,<br>Haryana, India</p>
                             </div>
                         </div>
                     </div>
@@ -884,7 +880,7 @@
             <div class="grid gap-12 lg:grid-cols-4">
                 <div class="lg:col-span-2">
                     <a href="#home" class="flex items-center gap-2.5">
-                        <img src="assets/logo.png" alt="Gauri Agro" class="h-14 w-14 rounded-full object-contain bg-white/95">
+                        <img src="assets/logo.png" alt="Gauri Agro" class="h-14 w-14 object-contain bg-white rounded-lg p-1 border border-gray-200">
                         <span class="font-display text-2xl font-bold">Gauri Agro</span>
                     </a>
                     <p class="mt-5 max-w-md text-sm leading-relaxed text-white/75">
@@ -913,16 +909,31 @@
                     <h4 class="font-display text-base font-semibold text-yellow-200">Get in Touch</h4>
                     <ul class="mt-4 space-y-3 text-sm text-white/80">
                         <li class="flex items-start gap-3">
-                            <span class="mt-0.5 text-yellow-200">📍</span>
-                            <span>Industrial Area, Karnal,<br>Haryana 132001, India</span>
+                            <span class="mt-0.5 text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                                </svg>
+                            </span>
+                            <span>No. 293, Backside Madhuban Academy,<br>Sirsi Road, Daha, Karnal-132001,<br>Haryana, India</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-yellow-200">📞</span>
-                            <a href="tel:+919876543210" class="hover:text-yellow-200 transition">+91 98765 43210</a>
+                            <span class="text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                </svg>
+                            </span>
+                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">+91 82952 49047</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-yellow-200">✉️</span>
-                            <a href="mailto:exports@gauriagro.com" class="hover:text-yellow-200 transition">exports@gauriagro.com</a>
+                            <span class="text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <a href="mailto:info@gauriagro.com" class="hover:text-yellow-200 transition block">info@gauriagro.com</a>
+                                <a href="mailto:sales@gauriagro.in" class="hover:text-yellow-200 transition block">sales@gauriagro.in</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -978,6 +989,82 @@
         // Observe all sections
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
+        });
+    </script>
+
+    <!-- Hero Slider Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderTrack = document.querySelector('.slider-track');
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            
+            // Content for each slide
+            const slideContent = [
+                {
+                    badge: 'From the Rice Bowl of India to Tables Worldwide',
+                    title: 'GAURI AGRO',
+                    description: 'Premium Rice Miller • Processor • Exporter • Trader<br>Karnal, Haryana, India — The Heart of Basmati Country',
+                    stats: [
+                        { value: '25+', label: 'Years of Excellence' },
+                        { value: '200 MT', label: 'Daily Processing Capacity' },
+                        { value: 'Global', label: 'Export Reach' }
+                    ]
+                },
+                {
+                    badge: 'State-of-the-Art Processing Facility',
+                    title: 'Modern Rice Milling',
+                    description: 'Advanced machinery and technology for premium quality<br>Village Amritpur Kalan, Tehsil Gharaunda, Karnal',
+                    stats: [
+                        { value: 'Advanced', label: 'Sortex Technology' },
+                        { value: '100%', label: 'Quality Control' },
+                        { value: 'ISO', label: 'Certified Standards' }
+                    ]
+                },
+                {
+                    badge: 'Excellence in Rice Processing',
+                    title: 'Premium Facilities',
+                    description: 'Combining traditional expertise with modern technology<br>Ensuring highest standards of purity and taste',
+                    stats: [
+                        { value: 'Modern', label: 'Infrastructure' },
+                        { value: 'Expert', label: 'Team' },
+                        { value: 'Trusted', label: 'Quality' }
+                    ]
+                }
+            ];
+            
+            function updateContent(index) {
+                const content = slideContent[index];
+                
+                // Update badge
+                document.querySelector('.badge-text').textContent = content.badge;
+                
+                // Update title
+                document.getElementById('hero-title').textContent = content.title;
+                
+                // Update description
+                document.getElementById('hero-description').innerHTML = content.description;
+                
+                // Update stats
+                const statValues = document.querySelectorAll('.stat-value');
+                const statLabels = document.querySelectorAll('.stat-label');
+                
+                content.stats.forEach((stat, i) => {
+                    if (statValues[i]) statValues[i].textContent = stat.value;
+                    if (statLabels[i]) statLabels[i].textContent = stat.label;
+                });
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                const offset = -currentSlide * 100;
+                sliderTrack.style.transform = `translateX(${offset}vw)`;
+                updateContent(currentSlide);
+            }
+            
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 5000);
         });
     </script>
 </body>

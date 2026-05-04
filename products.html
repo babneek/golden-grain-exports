@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — Premium Basmati Rice from Gauri Agro</title>
+    <meta name="description" content="Explore our premium Basmati rice varieties including 1121, 1509, and custom packaging solutions. Export quality rice from Karnal, India.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4BC;
+            --gold-deep: #B8860B;
+            --forest: #1A1A1A;
+            --forest-deep: #0D0D0D;
+            --espresso: #1F1F1F;
+            --cream: #FEFCF8;
+        }
+        
+        .font-display { font-family: 'Playfair Display', Georgia, serif; }
+        .font-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+        
+        .text-gradient-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .bg-gradient-gold { background: linear-gradient(135deg, var(--gold), var(--gold-deep)); }
+        .bg-gradient-forest { background: linear-gradient(135deg, var(--forest), var(--forest-deep)); }
+        .bg-gradient-cream { background: linear-gradient(180deg, #FEFEFE, #F5F5F5); }
+        
+        .shadow-soft { box-shadow: 0 4px 20px -6px rgba(31, 31, 31, 0.15); }
+        .shadow-elegant { box-shadow: 0 20px 50px -20px rgba(31, 31, 31, 0.35); }
+        .shadow-gold { box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.5); }
+        
+        .hover-lift:hover { transform: translateY(-8px); }
+        .transition-all { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-soft">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-16 py-4 lg:py-5">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="relative">
+                    <img src="assets/logo.png" alt="Gauri Agro — Premium Basmati Rice Exporters" 
+                         class="h-16 w-16 lg:h-20 lg:w-20 object-contain transition-transform group-hover:scale-105">
+                </div>
+                <span class="flex flex-col leading-none">
+                    <span class="font-display text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 group-hover:text-yellow-600 transition-colors">
+                        Gauri Agro
+                    </span>
+                    <span class="text-sm uppercase tracking-wider text-gray-500 group-hover:text-yellow-500 transition-colors">
+                        Premium Rice Exports
+                    </span>
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-9">
+                <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                <a href="products.html" class="text-sm font-medium text-gray-900 hover:text-yellow-600 transition-colors">Products</a>
+                <a href="global-presence.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Global Presence</a>
+                <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                Get a Quote
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="relative bg-gradient-cream py-20 lg:py-28 overflow-hidden">
+        <!-- Decorative rice plants -->
+        <div class="absolute top-16 right-16 opacity-10 animate-float hidden lg:block">
+            <img src="assets/RICEPLANT2.png" alt="Rice plant decoration" class="h-36 w-36 object-contain">
+        </div>
+        <div class="absolute bottom-16 left-16 opacity-15 animate-float hidden lg:block" style="animation-delay: 2s;">
+            <img src="assets/RICEPLANT.png" alt="Rice plant decoration" class="h-28 w-28 object-contain">
+        </div>
+        
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                <span class="h-px w-8 bg-yellow-600"></span>
+                Our Products
+            </span>
+            <h1 class="mt-4 font-display text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
+                Gauri Agro's Premium <span class="text-gradient-gold italic">Collection</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Premium Basmati varieties (1121, 1509, 1718, 1401, Pusa, Traditional, Sughandha, Sharbati) and Non-Basmati rice (PR-11, PR-106, IR-64, IR-8, Swarna) processed with state-of-the-art technology in Karnal, Haryana.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Product 1: 1121 Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-1121.jpg" alt="1121 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Premium Export Quality
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            1121 Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            The jewel of Basmati varieties — 1121 offers the world's longest grain with an unmatched elongation ratio after cooking. Its sweet, nutty aroma makes it the preferred choice for Biryanis, Pilaf, and premium catering globally.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Average Raw Grain Length: 8.35mm+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cooked Elongation: 2x+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Moisture: Max 13%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Broken: Max 1%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Sortex Clean: 100%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> APEDA / FSSAI Certified
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: 1509 Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-traditional.jpg" alt="1509 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Most Popular
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            High Aroma · Great Value
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            1509 Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            1509 Basmati delivers exceptional cooking characteristics — fluffy, long-grained, and wonderfully aromatic. It offers an authentic Basmati experience at a competitive price point, making it ideal for food service and retail chains.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Average Raw Grain Length: 8.20mm+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cooked Elongation: 1.8x+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Moisture: Max 13%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Broken: Max 2%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Sortex Clean: 100%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Suitable for Retail & HoReCa
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: 1718 Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-steam.jpg" alt="1718 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Premium Quality
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Long Grain Excellence
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            1718 Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            1718 Basmati combines excellent length with superior cooking quality. Known for its consistent performance and aromatic profile, it's perfect for premium retail markets and discerning customers.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Average Raw Grain Length: 8.10mm+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cooked Elongation: 1.9x+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Moisture: Max 13%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Broken: Max 1.5%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Excellent Aroma Profile
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Premium Export Grade
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Non-Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-sella.jpg" alt="Non-Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Bulk Available
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Diverse Range
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            Non-Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Our comprehensive non-Basmati range includes high-quality Sharbati, PR-11, PR-106, IR-64, IR-8, and Swarna varieties — processed with the same rigorous quality standards as our Basmati lines. Perfect for institutional catering, government tenders, and retail distribution across diverse markets.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Varieties: Sharbati, PR-11, PR-106, IR-64, IR-8, Swarna
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Lengths: Medium & Long
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Moisture: Max 14%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Broken: Max 5%
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Large MOQ Orders Welcome
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Custom Silky / Double Polish
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Custom Packaging -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/CUSTOM PACKAGING.png" alt="Custom Packaging Solutions" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Tailored for Your Brand
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Custom Solutions
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            Custom Private-Label Packaging Solutions
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            We offer comprehensive white-label and private-label packaging solutions to help your brand stand out on the shelf. Our state-of-the-art facility ensures freshness, aroma, and shelf-life are perfectly preserved.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Available: 5KG, 10KG, 20KG, 25KG, 50KG
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Materials: Non-Woven, BOPP, Jute, PP Bags
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> 5KG - Retail, 10KG - Retail
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> 25KG - HoReCa, 50KG - Bulk
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Custom Branding & Design
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Freshness & Aroma Preserved
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5: Pusa Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-traditional.jpg" alt="Pusa Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Traditional
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Classic Variety
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            Pusa Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Traditional Pusa Basmati offers authentic aroma and taste at competitive pricing. Ideal for everyday cooking and bulk institutional requirements while maintaining the classic Basmati characteristics.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Average Raw Grain Length: 7.50mm+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cooked Elongation: 1.6x+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Traditional Basmati Aroma
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cost-Effective Solution
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Bulk Orders Available
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Institutional Grade
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6: Sughandha Basmati -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="assets/product-steam.jpg" alt="Sughandha Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
+                            Aromatic
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-yellow-600 mb-2">
+                            Fragrant Excellence
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-gray-900 leading-tight mb-4">
+                            Sughandha Basmati Rice
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Sughandha Basmati is renowned for its exceptional fragrance and delicate texture. Perfect for premium retail markets and discerning customers who appreciate authentic Basmati aroma and cooking quality.
+                        </p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="text-sm font-semibold text-yellow-600">Key Specifications:</div>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Average Raw Grain Length: 7.80mm+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Cooked Elongation: 1.7x+
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Exceptional Fragrance
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Premium Retail Grade
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Delicate Texture
+                                </div>
+                                <div class="text-sm text-gray-600 flex items-center gap-2">
+                                    <span class="text-yellow-500">✓</span> Export Quality Standards
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                            Request Quote →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 lg:py-32 bg-gradient-cream overflow-hidden">
+        <!-- Decorative rice plants -->
+        <div class="absolute top-20 right-8 opacity-10 animate-float hidden lg:block">
+            <img src="assets/RICEPLANT.png" alt="Rice plant decoration" class="h-28 w-28 object-contain">
+        </div>
+        
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 relative z-10">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                    <span class="h-px w-8 bg-yellow-600"></span>
+                    Our Process
+                </span>
+                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                    Sourcing → Milling → Packaging → <span class="text-gradient-gold italic">Export</span>
+                </h2>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="relative rounded-2xl bg-white border border-gray-200 p-7 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="text-xs font-mono uppercase tracking-widest text-yellow-600">Step 01</div>
+                    <span class="mt-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                        🌾
+                    </span>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Sourcing</h3>
+                    <p class="mt-2 text-sm text-gray-600 leading-relaxed">Direct procurement from farmer collectives across Karnal, Kurukshetra, Kaithal and Punjab — verified for variety, moisture and purity at the gate.</p>
+                </div>
+                
+                <div class="relative rounded-2xl bg-white border border-gray-200 p-7 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="text-xs font-mono uppercase tracking-widest text-yellow-600">Step 02</div>
+                    <span class="mt-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                        🏭
+                    </span>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Milling</h3>
+                    <p class="mt-2 text-sm text-gray-600 leading-relaxed">Modern stainless-steel mills with rubber-roll shellers, paddy separators, color sorters and length graders. Zero metal contamination.</p>
+                </div>
+                
+                <div class="relative rounded-2xl bg-white border border-gray-200 p-7 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="text-xs font-mono uppercase tracking-widest text-yellow-600">Step 03</div>
+                    <span class="mt-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                        📦
+                    </span>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Packaging</h3>
+                    <p class="mt-2 text-sm text-gray-600 leading-relaxed">Food-grade jute, PP woven & non-woven bags from 5 kg to 50 kg. Custom branding and private-label support.</p>
+                </div>
+                
+                <div class="relative rounded-2xl bg-white border border-gray-200 p-7 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="text-xs font-mono uppercase tracking-widest text-yellow-600">Step 04</div>
+                    <span class="mt-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                        🚢
+                    </span>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-gray-900">Export</h3>
+                    <p class="mt-2 text-sm text-gray-600 leading-relaxed">Containerized shipments via Mundra, Nhava Sheva and Kandla. Documentation, fumigation and inspection handled in-house.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="mx-auto max-w-6xl px-6 lg:px-16">
+            <div class="relative overflow-hidden rounded-3xl bg-gradient-forest p-12 lg:p-16 text-center shadow-elegant">
+                <div class="relative">
+                    <h2 class="font-display text-3xl md:text-5xl font-semibold text-white leading-tight">
+                        Ready to source <span class="text-gradient-gold italic">premium basmati</span> from Gauri Agro?
+                    </h2>
+                    <p class="mt-5 text-white/75 max-w-xl mx-auto">
+                        Experience the pure essence of Karnal with Gauri Agro. Get a tailored quote within 24 hours.
+                    </p>
+                    <a href="contact.html" class="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Request a Quote →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-forest text-white">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+            <div class="grid gap-12 lg:grid-cols-4">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2.5">
+                        <img src="assets/logo.png" alt="Gauri Agro" class="h-14 w-14 object-contain bg-white rounded-lg p-1 border border-gray-200">
+                        <span class="font-display text-2xl font-bold">Gauri Agro</span>
+                    </a>
+                    <p class="mt-5 max-w-md text-sm leading-relaxed text-white/75">
+                        Premium basmati rice exporters from Karnal, the rice bowl of India.
+                        Trusted by importers, wholesalers and distributors across 30+ countries.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">FSSAI</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">ISO 22000</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">APEDA</span>
+                        <span class="rounded-full border border-white/20 px-3 py-1 text-xs tracking-wide text-white/80">HACCP</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-display text-base font-semibold text-yellow-200">Explore</h4>
+                    <ul class="mt-4 space-y-2.5 text-sm text-white/75">
+                        <li><a href="about.html" class="hover:text-yellow-200 transition">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-yellow-200 transition">Our Products</a></li>
+                        <li><a href="global-presence.html" class="hover:text-yellow-200 transition">Global Presence</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-200 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-display text-base font-semibold text-yellow-200">Get in Touch</h4>
+                    <ul class="mt-4 space-y-3 text-sm text-white/80">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-0.5 text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                                </svg>
+                            </span>
+                            <span>No. 293, Backside Madhuban Academy,<br>Sirsi Road, Daha, Karnal-132001,<br>Haryana, India</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                </svg>
+                            </span>
+                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">+91 82952 49047</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <a href="mailto:info@gauriagro.com" class="hover:text-yellow-200 transition block">info@gauriagro.com</a>
+                                <a href="mailto:sales@gauriagro.in" class="hover:text-yellow-200 transition block">sales@gauriagro.in</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-14 border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/60">
+                <p>© 2024 Gauri Agro Exports. All rights reserved.</p>
+                <p>Crafted with care from Karnal, India.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
