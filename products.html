@@ -133,19 +133,61 @@
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="relative bg-gradient-cream py-20 lg:py-28 overflow-hidden">
-        <div class="mx-auto max-w-7xl px-6 lg:px-16 text-center relative z-10">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
-                <span class="h-px w-8 bg-yellow-600"></span>
-                Our Products
-            </span>
-            <h1 class="mt-4 font-display text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                Gauri Agro's Premium <span class="text-gradient-gold italic">Collection</span>
-            </h1>
-            <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Comprehensive range of Basmati, Non-Basmati, Special Varieties, and Organic rice — all processed with state-of-the-art technology in Karnal, Haryana.
-            </p>
+    <!-- Hero Banner -->
+    <section class="relative isolate overflow-hidden min-h-[70vh] flex items-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="assets/1121.jpg" alt="Premium Basmati Rice Products" 
+                 class="absolute inset-0 h-full w-full object-cover">
+        </div>
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+        
+        <!-- Content -->
+        <div class="relative w-full px-8 lg:px-12 py-32 text-white">
+            <div class="max-w-7xl mx-auto">
+                <span class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
+                    <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                    Our Products
+                </span>
+                
+                <h1 class="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight">
+                    Premium <span class="text-gradient-gold italic">Basmati</span><br>Collection
+                </h1>
+                
+                <p class="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/85">
+                    Comprehensive range of Basmati, Non-Basmati, Special Varieties, and Organic rice — all processed with state-of-the-art technology in Karnal, Haryana.
+                </p>
+                
+                <div class="mt-9 flex flex-wrap gap-4">
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Request Quote →
+                    </a>
+                    <a href="#products" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
+                        View Products
+                    </a>
+                </div>
+                
+                <!-- Product Categories -->
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl">
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">1121</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Basmati Rice</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">1509</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Basmati Rice</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">Sella</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Parboiled Rice</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">Custom</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Packaging</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -171,7 +213,7 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-1121.jpg" alt="1121 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/1121.jpg" alt="1121 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Best Seller
                         </div>
@@ -218,7 +260,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="1509 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/1509.jpg" alt="1509 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Most Popular
                         </div>
@@ -265,7 +307,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="1718 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/1718.jpg" alt="1718 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Premium Quality
                         </div>
@@ -312,7 +354,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="1401 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/1401.jpg" alt="1401 Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Premium
                         </div>
@@ -359,7 +401,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="Pusa Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/pusa steam.jpg" alt="Pusa Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Traditional
                         </div>
@@ -406,7 +448,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="Traditional Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/traditionaal.jpg" alt="Traditional Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Authentic
                         </div>
@@ -453,7 +495,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="Sughandha Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/sugandha.jpg" alt="Sughandha Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Aromatic
                         </div>
@@ -500,7 +542,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="Sharbati Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/sharbati.jpg" alt="Sharbati Basmati Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Popular
                         </div>
@@ -567,7 +609,7 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="PR-11 Long Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/pr11.jpg" alt="PR-11 Long Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Long Grain
                         </div>
@@ -614,7 +656,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="PR-106 (Parmal) Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/pr106.jpg" alt="PR-106 (Parmal) Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Long Grain
                         </div>
@@ -661,7 +703,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="IR-64 Long Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/ir-64.jpg" alt="IR-64 Long Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Long Grain
                         </div>
@@ -708,7 +750,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-1121.jpg" alt="IR-8 Medium Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/ir8.jpg" alt="IR-8 Medium Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Medium Grain
                         </div>
@@ -755,7 +797,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="Swarna Short Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/swarna.jpg" alt="Swarna Short Grain Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Short Grain
                         </div>
@@ -822,7 +864,7 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="Sona Masoori Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/sona masori.jpg" alt="Sona Masoori Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Regional Specialty
                         </div>
@@ -869,7 +911,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="Idli Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/idli rice.jpg" alt="Idli Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             South Indian
                         </div>
@@ -916,7 +958,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="Ponni Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/ponni rice.jpg" alt="Ponni Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Tamil Nadu Variety
                         </div>
@@ -963,7 +1005,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-1121.jpg" alt="Matta Rice (Kerala Red)" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/matta rice.jpg" alt="Matta Rice (Kerala Red)" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Nutrient-Rich
                         </div>
@@ -1010,7 +1052,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="Ambemohar Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/ambemohar.jpg" alt="Ambemohar Rice" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Aromatic
                         </div>
@@ -1077,7 +1119,7 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-1121.jpg" alt="1121 Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/1121 organic.jpg" alt="1121 Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Organic Certified
                         </div>
@@ -1124,7 +1166,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="Pusa Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/pusa organic.jpg" alt="Pusa Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Organic Certified
                         </div>
@@ -1171,7 +1213,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-steam.jpg" alt="CSR-30 Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/csr 30.jpg" alt="CSR-30 Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Organic Certified
                         </div>
@@ -1218,7 +1260,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-sella.jpg" alt="Ranvir Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/ranvir.jpg" alt="Ranvir Organic Basmati" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Organic Certified
                         </div>
@@ -1265,7 +1307,7 @@
                 </div>
                 <div class="group relative overflow-hidden rounded-2xl bg-white shadow-soft transition-all hover-lift hover:shadow-elegant">
                     <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="assets/product-traditional.jpg" alt="Traditional Type-3 Organic" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/traditional type 3.jpg" alt="Traditional Type-3 Organic" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute top-4 left-4 bg-gradient-gold rounded-full px-3 py-1 text-xs font-bold text-gray-900 shadow-gold">
                             Organic Certified
                         </div>
@@ -1410,13 +1452,17 @@
                             </span>
                             <span>No. 293, Backside Madhuban Academy,<br>Sirsi Road, Daha, Karnal-132001,<br>Haryana, India</span>
                         </li>
-                        <li class="flex items-center gap-3">
+                    <li class="flex items-center gap-3">
                             <span class="text-yellow-200">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                    <path
+                                        d="M6.62 10.79a15.054 15.054 0 006.59 6.59l2.2-2.2a1 1 0 011-.24c1.12.37 2.33.57 3.59.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.59a1 1 0 01-.24 1l-2.2 2.2z" />
                                 </svg>
                             </span>
-                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">+91 82952 49047</a>
+
+                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">
+                                +91 82952 49047
+                            </a>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="text-yellow-200">
@@ -1442,3 +1488,4 @@
 
 </body>
 </html>
+

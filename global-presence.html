@@ -80,30 +80,61 @@
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="relative bg-gradient-forest text-white py-20 lg:py-28 overflow-hidden">
-        <!-- Background rice field image with overlay -->
+    <!-- Hero Banner -->
+    <section class="relative isolate overflow-hidden min-h-[70vh] flex items-center">
+        <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="assets/PADDY-FIELDS.JPG.png" alt="Rice paddy fields" class="w-full h-full object-cover opacity-20">
-            <div class="absolute inset-0 bg-gradient-forest opacity-80"></div>
+            <img src="assets/Hero-rice.png" alt="Global Presence - Gauri Agro" 
+                 class="absolute inset-0 h-full w-full object-cover">
         </div>
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
         
-        <!-- Decorative rice plants -->
-        <div class="absolute top-12 right-12 opacity-20 animate-float hidden lg:block">
-            <img src="assets/RICEPLANT.png" alt="Rice plant decoration" class="h-32 w-32 object-contain">
-        </div>
-        
-        <div class="mx-auto max-w-7xl px-6 lg:px-16 text-center relative z-10">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-200">
-                <span class="h-px w-8 bg-yellow-200"></span>
-                Global Presence
-            </span>
-            <h1 class="mt-4 font-display text-4xl md:text-6xl font-semibold text-white leading-tight">
-                Trusted in <span class="text-gradient-gold italic">40+ countries</span>
-            </h1>
-            <p class="mt-6 text-lg text-white/75 max-w-3xl mx-auto leading-relaxed">
-                Our basmati travels across oceans to reach kitchens, restaurants and retail shelves — delivering the pure essence of Karnal to discerning buyers worldwide.
-            </p>
+        <!-- Content -->
+        <div class="relative w-full px-8 lg:px-12 py-32 text-white">
+            <div class="max-w-7xl mx-auto">
+                <span class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
+                    <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                    Global Presence
+                </span>
+                
+                <h1 class="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight">
+                    Trusted in <span class="text-gradient-gold italic">40+</span> Countries
+                </h1>
+                
+                <p class="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/85">
+                    Our basmati travels across oceans to reach kitchens, restaurants and retail shelves — delivering the pure essence of Karnal to discerning buyers worldwide.
+                </p>
+                
+                <div class="mt-9 flex flex-wrap gap-4">
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Become a Partner →
+                    </a>
+                    <a href="#markets" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
+                        View Markets
+                    </a>
+                </div>
+                
+                <!-- Global Statistics -->
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl">
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">40+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Countries Served</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">50K+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">MT Exported</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">25+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">100%</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Quality Assured</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -132,81 +163,215 @@
     </section>
 
     <!-- Regional Markets -->
-    <section class="py-20 lg:py-28">
-        <div class="mx-auto max-w-7xl px-6 lg:px-16">
+    <section id="markets" class="py-20 lg:py-32 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="mx-auto max-w-7xl px-6 lg:px-16 relative z-10">
             <div class="text-center mb-16">
                 <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
                     <span class="h-px w-8 bg-yellow-600"></span>
                     Export Markets
                 </span>
-                <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
+                <h2 class="mt-4 font-display text-3xl md:text-5xl font-semibold text-gray-900">
                     Our Global <span class="text-gradient-gold italic">Network</span>
                 </h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Delivering premium basmati rice to discerning customers across four continents
+                </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Middle East -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <div class="text-3xl mb-4">🕌</div>
-                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">Middle East</h3>
-                    <div class="space-y-2">
-                        <div class="text-sm text-gray-600">United Arab Emirates</div>
-                        <div class="text-sm text-gray-600">Saudi Arabia</div>
-                        <div class="text-sm text-gray-600">Iran</div>
-                        <div class="text-sm text-gray-600">Iraq</div>
-                        <div class="text-sm text-gray-600">Kuwait</div>
-                        <div class="text-sm text-gray-600">Qatar</div>
-                        <div class="text-sm text-gray-600">Oman</div>
-                        <div class="text-sm text-gray-600">Bahrain</div>
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 shadow-soft hover:shadow-elegant hover:border-yellow-400 transition-all duration-500 hover-lift">
+                    <!-- Decorative Corner -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-10 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-full overflow-hidden shadow-md">
+                                <img src="assets/east.png" alt="Middle East" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-bold text-sm group-hover:bg-gradient-gold group-hover:text-gray-900 transition-all">
+                                1
+                            </div>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">Middle East</h3>
+                        <div class="space-y-2.5">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> United Arab Emirates
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Saudi Arabia
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Iran
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Iraq
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Kuwait
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Qatar
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Oman
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Bahrain
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Europe -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <div class="text-3xl mb-4">🏰</div>
-                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">Europe</h3>
-                    <div class="space-y-2">
-                        <div class="text-sm text-gray-600">United Kingdom</div>
-                        <div class="text-sm text-gray-600">Germany</div>
-                        <div class="text-sm text-gray-600">France</div>
-                        <div class="text-sm text-gray-600">Netherlands</div>
-                        <div class="text-sm text-gray-600">Italy</div>
-                        <div class="text-sm text-gray-600">Spain</div>
-                        <div class="text-sm text-gray-600">Belgium</div>
-                        <div class="text-sm text-gray-600">Switzerland</div>
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 shadow-soft hover:shadow-elegant hover:border-yellow-400 transition-all duration-500 hover-lift">
+                    <!-- Decorative Corner -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-10 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-full overflow-hidden shadow-md">
+                                <img src="assets/europe.png" alt="Europe" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-bold text-sm group-hover:bg-gradient-gold group-hover:text-gray-900 transition-all">
+                                2
+                            </div>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">Europe</h3>
+                        <div class="space-y-2.5">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> United Kingdom
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Germany
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> France
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Netherlands
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Italy
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Spain
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Belgium
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Switzerland
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Americas -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <div class="text-3xl mb-4">🗽</div>
-                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">Americas</h3>
-                    <div class="space-y-2">
-                        <div class="text-sm text-gray-600">United States</div>
-                        <div class="text-sm text-gray-600">Canada</div>
-                        <div class="text-sm text-gray-600">Mexico</div>
-                        <div class="text-sm text-gray-600">Brazil</div>
-                        <div class="text-sm text-gray-600">Argentina</div>
-                        <div class="text-sm text-gray-600">Chile</div>
-                        <div class="text-sm text-gray-600">Peru</div>
-                        <div class="text-sm text-gray-600">Colombia</div>
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 shadow-soft hover:shadow-elegant hover:border-yellow-400 transition-all duration-500 hover-lift">
+                    <!-- Decorative Corner -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-10 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-full overflow-hidden shadow-md">
+                                <img src="assets/america.png" alt="Americas" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-bold text-sm group-hover:bg-gradient-gold group-hover:text-gray-900 transition-all">
+                                3
+                            </div>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">Americas</h3>
+                        <div class="space-y-2.5">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> United States
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Canada
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Mexico
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Brazil
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Argentina
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Chile
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Peru
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Colombia
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Asia Pacific -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <div class="text-3xl mb-4">🏯</div>
-                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">Asia Pacific</h3>
-                    <div class="space-y-2">
-                        <div class="text-sm text-gray-600">Australia</div>
-                        <div class="text-sm text-gray-600">Singapore</div>
-                        <div class="text-sm text-gray-600">Malaysia</div>
-                        <div class="text-sm text-gray-600">Hong Kong</div>
-                        <div class="text-sm text-gray-600">Japan</div>
-                        <div class="text-sm text-gray-600">South Korea</div>
-                        <div class="text-sm text-gray-600">New Zealand</div>
-                        <div class="text-sm text-gray-600">Philippines</div>
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 shadow-soft hover:shadow-elegant hover:border-yellow-400 transition-all duration-500 hover-lift">
+                    <!-- Decorative Corner -->
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-gold opacity-10 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500"></div>
+                    
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 rounded-full overflow-hidden shadow-md">
+                                <img src="assets/asia.png" alt="Asia Pacific" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-bold text-sm group-hover:bg-gradient-gold group-hover:text-gray-900 transition-all">
+                                4
+                            </div>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">Asia Pacific</h3>
+                        <div class="space-y-2.5">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Australia
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Singapore
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Malaysia
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Hong Kong
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Japan
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> South Korea
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> New Zealand
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-gray-900 transition-colors">
+                                <span class="text-yellow-500 text-lg">•</span> Philippines
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-200 px-8 py-4">
+                    <span class="text-2xl"></span>
+                    <div class="text-left">
+                        <div class="font-display text-lg font-semibold text-gray-900">Expanding to New Markets</div>
+                        <div class="text-sm text-gray-600">Don't see your country? Let's discuss partnership opportunities.</div>
+                    </div>
+                    <a href="contact.html" class="ml-4 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Contact Us →
+                    </a>
                 </div>
             </div>
         </div>
@@ -227,11 +392,11 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Shipping Ports -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold shadow-gold">
-                        🚢
-                    </span>
-                    <h3 class="mt-5 font-display text-xl font-semibold text-gray-900">Major Ports</h3>
+                <div class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-xl overflow-hidden shadow-md mb-5">
+                        <img src="assets/RICEPLANT.png" alt="Major Ports" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">Major Ports</h3>
                     <p class="mt-3 text-gray-600 leading-relaxed">Containerized shipments via Mundra, Nhava Sheva, and Kandla ports with full container stuffing facilities.</p>
                     <ul class="mt-4 space-y-2">
                         <li class="text-sm text-gray-600 flex items-center gap-2">
@@ -247,11 +412,11 @@
                 </div>
 
                 <!-- Incoterms -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold shadow-gold">
-                        📋
-                    </span>
-                    <h3 class="mt-5 font-display text-xl font-semibold text-gray-900">Trade Terms</h3>
+                <div class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-xl overflow-hidden shadow-md mb-5">
+                        <img src="assets/CUSTOM PACKAGING.png" alt="Trade Terms" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">Trade Terms</h3>
                     <p class="mt-3 text-gray-600 leading-relaxed">Flexible incoterms to suit your business requirements and logistics preferences.</p>
                     <ul class="mt-4 space-y-2">
                         <li class="text-sm text-gray-600 flex items-center gap-2">
@@ -267,11 +432,11 @@
                 </div>
 
                 <!-- Documentation -->
-                <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
-                    <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold shadow-gold">
-                        📄
-                    </span>
-                    <h3 class="mt-5 font-display text-xl font-semibold text-gray-900">Documentation</h3>
+                <div class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-xl overflow-hidden shadow-md mb-5">
+                        <img src="assets/logo.png" alt="Documentation" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">Documentation</h3>
                     <p class="mt-3 text-gray-600 leading-relaxed">Complete export documentation handled in-house for smooth customs clearance worldwide.</p>
                     <ul class="mt-4 space-y-2">
                         <li class="text-sm text-gray-600 flex items-center gap-2">
@@ -290,58 +455,73 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="py-24 lg:py-32">
+    <section class="py-24 lg:py-32 bg-gray-50">
         <div class="mx-auto max-w-7xl px-6 lg:px-16">
             <div class="text-center mb-16">
-                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
+                <span
+                    class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
                     <span class="h-px w-8 bg-yellow-600"></span>
-                    Global Testimonials
+                    Words from our partners
                 </span>
                 <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold text-gray-900">
                     Trusted by importers <span class="text-gradient-gold italic">worldwide</span>
                 </h2>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Testimonial 1 -->
-                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                <figure
+                    class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
                     <span class="text-6xl text-yellow-500/40">"</span>
                     <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
-                        "Gauri Agro has been our trusted basmati partner for years. The quality consistency from Karnal's finest mills is unmatched."
+                        "Gauri Agro has been our trusted basmati partner for years. The quality consistency from
+                        Karnal's finest mills is unmatched."
                     </blockquote>
-                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
-                        <div class="font-display font-semibold text-gray-900">Ahmed Al-Rashid</div>
-                        <div class="text-xs text-gray-600 mt-0.5">Importer, Dubai, UAE</div>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200 flex items-center gap-4">
+                        <img src="assets/Gemini_Generated_Image_2ppyy32ppyy32ppy.png" alt="Ahmed Al-Rashid" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-display font-semibold text-gray-900">Ahmed Al-Rashid</div>
+                            <div class="text-xs text-gray-600 mt-0.5">Importer, Dubai, UAE</div>
+                        </div>
                     </figcaption>
                 </figure>
 
                 <!-- Testimonial 2 -->
-                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                <figure
+                    class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
                     <span class="text-6xl text-yellow-500/40">"</span>
                     <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
-                        "The 1121 and 1509 varieties we receive are exceptional. Their Sortex processing delivers the purity our customers expect."
+                        "The 1121 and 1509 varieties we receive are exceptional. Their Sortex processing delivers the
+                        purity our customers expect."
                     </blockquote>
-                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
-                        <div class="font-display font-semibold text-gray-900">Sarah Müller</div>
-                        <div class="text-xs text-gray-600 mt-0.5">Distributor, Hamburg, Germany</div>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200 flex items-center gap-4">
+                        <img src="assets/Gemini_Generated_Image_ixw200ixw200ixw2.png" alt="Sarah Müller" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-display font-semibold text-gray-900">Sarah Müller</div>
+                            <div class="text-xs text-gray-600 mt-0.5">Distributor, Hamburg, Germany</div>
+                        </div>
                     </figcaption>
                 </figure>
 
                 <!-- Testimonial 3 -->
-                <figure class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
+                <figure
+                    class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-soft hover:shadow-elegant transition-all hover-lift">
                     <span class="text-6xl text-yellow-500/40">"</span>
                     <blockquote class="mt-4 text-base text-gray-900 leading-relaxed">
-                        "Professional export documentation, reliable supply chain, and rice that speaks for itself. A truly dependable supplier."
+                        "Professional export documentation, reliable supply chain, and rice that speaks for itself. A
+                        truly dependable supplier."
                     </blockquote>
-                    <figcaption class="mt-6 pt-6 border-t border-gray-200">
-                        <div class="font-display font-semibold text-gray-900">James O'Connor</div>
-                        <div class="text-xs text-gray-600 mt-0.5">Wholesaler, London, UK</div>
+                    <figcaption class="mt-6 pt-6 border-t border-gray-200 flex items-center gap-4">
+                        <img src="assets/Gemini_Generated_Image_mqb8gmqb8gmqb8gm.png" alt="James O'Connor" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-display font-semibold text-gray-900">James O'Connor</div>
+                            <div class="text-xs text-gray-600 mt-0.5">Wholesaler, London, UK</div>
+                        </div>
                     </figcaption>
                 </figure>
             </div>
         </div>
-    </section>
-
+    </section> 
     <!-- CTA Section -->
     <section class="py-20">
         <div class="mx-auto max-w-6xl px-6 lg:px-16">
@@ -403,13 +583,17 @@
                             </span>
                             <span>No. 293, Backside Madhuban Academy,<br>Sirsi Road, Daha, Karnal-132001,<br>Haryana, India</span>
                         </li>
-                        <li class="flex items-center gap-3">
+                      <li class="flex items-center gap-3">
                             <span class="text-yellow-200">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                    <path
+                                        d="M6.62 10.79a15.054 15.054 0 006.59 6.59l2.2-2.2a1 1 0 011-.24c1.12.37 2.33.57 3.59.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.59a1 1 0 01-.24 1l-2.2 2.2z" />
                                 </svg>
                             </span>
-                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">+91 82952 49047</a>
+
+                            <a href="tel:+918295249047" class="hover:text-yellow-200 transition">
+                                +91 82952 49047
+                            </a>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="text-yellow-200">

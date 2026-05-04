@@ -80,27 +80,57 @@
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="relative bg-gradient-cream py-20 lg:py-28 overflow-hidden">
-        <!-- Decorative rice plants -->
-        <div class="absolute top-10 right-10 opacity-10 animate-float hidden lg:block">
-            <img src="assets/RICEPLANT.png" alt="Rice plant decoration" class="h-40 w-40 object-contain">
+    <!-- Hero Banner -->
+    <section class="relative isolate overflow-hidden min-h-[70vh] flex items-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="assets/about.png" alt="Basmati rice paddy fields in Karnal" 
+                 class="absolute inset-0 h-full w-full object-cover">
         </div>
-        <div class="absolute bottom-10 left-10 opacity-15 animate-float hidden lg:block" style="animation-delay: 3s;">
-            <img src="assets/RICEPLANT2.png" alt="Rice plant decoration" class="h-32 w-32 object-contain">
-        </div>
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
         
-        <div class="mx-auto max-w-7xl px-6 lg:px-16 text-center relative z-10">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-yellow-600">
-                <span class="h-px w-8 bg-yellow-600"></span>
-                Our Story
-            </span>
-            <h1 class="mt-4 font-display text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                Purveyors of Excellence from <span class="text-gradient-gold italic">Karnal</span>
-            </h1>
-            <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                A premium rice processing mill and global exporter rooted in Karnal, Haryana - delivering the pure essence of India's basmati heartland to the world.
-            </p>
+        <!-- Content -->
+        <div class="relative w-full px-8 lg:px-12 py-32 text-white">
+            <div class="max-w-7xl mx-auto">
+                <span class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-black/30 backdrop-blur-sm px-6 py-2 text-sm font-medium tracking-wider text-yellow-200">
+                    <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                    Our Story
+                </span>
+                
+                <h1 class="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight">
+                    Purveyors of Excellence<br>from <span class="text-gradient-gold italic">Karnal</span>
+                </h1>
+                
+                <p class="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/85">
+                    A premium rice processing mill and global exporter rooted in Karnal, Haryana — delivering the pure essence of India's basmati heartland to the world.
+                </p>
+                
+                <div class="mt-9 flex flex-wrap gap-4">
+                    <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-gray-900 shadow-gold transition-all hover:scale-105">
+                        Get a Quote →
+                    </a>
+                    <a href="products.html" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur-sm px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10">
+                        View Products
+                    </a>
+                </div>
+                
+                <!-- Statistics -->
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">25+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Years of Excellence</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">200 MT</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Daily Capacity</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl md:text-4xl font-semibold text-yellow-200">40+</div>
+                        <div class="mt-1 text-xs uppercase tracking-wider text-white/65">Countries Served</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -396,7 +426,7 @@
                         <div class="flex items-center justify-center mb-4">
                             <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
                                 <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.93 9h-3.02a15.65 15.65 0 00-1.38-5.03A8.03 8.03 0 0119.93 11zM12 4c.98 1.4 1.75 3.26 2.16 5H9.84C10.25 7.26 11.02 5.4 12 4zM4.07 13h3.02c.23 1.78.86 3.44 1.38 5.03A8.03 8.03 014.07 13zM4.07 11A8.03 8.03 018.47 5.97 15.65 15.65 0 007.09 11H4.07zm5.77 2h4.32c-.41 1.74-1.18 3.6-2.16 5-.98-1.4-1.75-3.26-2.16-5zm.09-2c.41-1.74 1.18-3.6 2.07-5 .89 1.4 1.66 3.26 2.07 5H9.93zm6.44 2h3.02a8.03 8.03 01-4.4 5.03c.52-1.59 1.15-3.25 1.38-5.03z"/>
                                 </svg>
                             </div>
                         </div>
@@ -424,7 +454,7 @@
                         <div class="flex items-center justify-center mb-4">
                             <div class="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
                                 <svg class="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5S21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 17C9.24 17 7 14.76 7 12S9.24 7 12 7S17 9.24 17 12S14.76 17 12 17ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15S15 13.66 15 12S13.66 9 12 9Z"/>
                                 </svg>
                             </div>
                         </div>
@@ -534,7 +564,7 @@
                         <li class="flex items-center gap-3">
                             <span class="text-yellow-200">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79C6.19 8.53 6.5 6.83 7.54 5.79C8.58 4.75 10.28 4.44 12.54 4.87L13.12 4.97L12.54 4.87C14.8 5.3 16.5 6.61 17.54 8.65C18.58 10.69 18.27 12.39 17.23 13.43C16.19 14.47 14.49 14.78 12.23 14.35L11.65 14.25L12.23 14.35C9.97 13.92 8.27 12.61 7.23 10.57C6.19 8.53 6.5 6.83 7.54 5.79Z"/>
+                                    <path d="M6.62 10.79a15.054 15.054 0 006.59 6.59l2.2-2.2a1 1 0 011-.24c1.12.37 2.33.57 3.59.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.59a1 1 0 01-.24 1l-2.2 2.2z"/>
                                 </svg>
                             </span>
                             <a href="tel:+918295249047" class="hover:text-yellow-200 transition">+91 82952 49047</a>
