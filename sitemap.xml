@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://gauriagro.in/</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://gauriagro.in/assets/Hero-rice.png</image:loc>
+            <image:title>Gauri Agro Premium Basmati Rice</image:title>
+        </image:image>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://gauriagro.in/about.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gauriagro.in/assets/about.png</image:loc>
+            <image:title>About Gauri Agro</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Products Page -->
+    <url>
+        <loc>https://gauriagro.in/products.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://gauriagro.in/assets/1121.jpg</image:loc>
+            <image:title>1121 Basmati Rice</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gauriagro.in/assets/1509.jpg</image:loc>
+            <image:title>1509 Basmati Rice</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Global Presence Page -->
+    <url>
+        <loc>https://gauriagro.in/global-presence.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://gauriagro.in/assets/download (3).jpg</image:loc>
+            <image:title>Global Export Network</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://gauriagro.in/contact.html</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>
